@@ -1,0 +1,210 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #d0d0d0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: #ffeb3b;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    background-color: black;
+    margin: 0px 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: blueviolet;
+}
+
+.header__title {
+    margin: auto;
+    padding: 20px 20px 0px 20px;
+}
+
+.header__title h1 {
+    font-size: 60px;
+    font-style: normal;
+    text-align: center;
+}
+
+.header__title__prepend {
+    font-size: 15px;
+}
+
+.header__title__append {
+    height: 30px;
+    display: flex;
+    float: right;
+}
+
+.header__combo__quote {
+    font-size: 20px;
+}
+
+.header__combo__cell {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer {
+    padding: 0px 10px 20px 10px;
+    position: relative;
+    background-color: blueviolet;
+}
+
+.footer__github {
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.footer__author {
+    text-align: center;
+    font-size: 17px;
+}
+
+.header__title,
+.header__prepend,
+.header__append,
+.header__combo,
+.footer__github,
+.footer__github a,
+.footer__author {
+    font-weight: bold;
+}
+
+.main {
+    height: 80%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-color: crimson;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+}
+
+.main__box {
+    width: 80%;
+    height: 75%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__box__title {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main__box__body {
+    flex-grow: 10;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.main__box__footer {
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.main__top {
+    top: -15%;
+}
+
+.main__bot {
+    bottom: -15%;
+}
+
+.main__top,
+.main__bot {
+    position: absolute;
+    left: -25%;
+    width: 150%;
+    height: 20%;
+    transform: rotate(2deg);
+    background-color: blueviolet;
+}
+
+.gamecard {
+    margin: 5px 5px 15px 5px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.gamecard__title {
+    margin-bottom: 5px;
+}
+
+.gamecard__title,
+.gamecard__title a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .container {
+        margin: 0px 0px;
+    }
+
+    .header__title h1 {
+        font-size: 35px;
+    }
+
+    .header__combo__quote {
+        font-size: 15px;
+    }
+    
+    .header__combo__cell {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        margin: 0px 0px;
+    }
+
+    .header__title h1 {
+        font-size: 60px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 768px;
+        margin: auto;
+    }
+}
